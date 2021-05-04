@@ -1,7 +1,11 @@
 // const items = ['Bob', 'Smith', 'Alice', 'Boris'];
 
+import {useSearch} from "../SearchContext";
+
 const List = (props) => {
-    const {value = ''} = props;
+    // const {value = ''} = props;
+
+    const {items} = useSearch();
     return (
         <ul>
             {

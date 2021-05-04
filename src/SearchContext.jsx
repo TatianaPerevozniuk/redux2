@@ -1,4 +1,4 @@
-import {createContext, useState} from "react";
+import {createContext, useState, useContext} from "react";
 
 const items = ['Bob', 'Smith', 'Alice', 'Boris'];
 
@@ -21,7 +21,9 @@ export const SearchProvider = props => {
     }
 
     return (
-        <SearchContext.Provider value={searchObj}>{children}</SearchContext.Provider>
+        <SearchContext.Provider value={searchObj}>
+            {children}
+        </SearchContext.Provider>
     )
 }
 

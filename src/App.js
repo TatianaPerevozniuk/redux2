@@ -10,6 +10,7 @@ function App() {
 
     return (
         <div className="App">
+            <h1>Search</h1>
             {/*<SearchInput onValueChange = {(value) => setValue(value)}/>*/}
             {/*<List value={value}/>*/}
 
